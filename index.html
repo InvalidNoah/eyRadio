@@ -1,0 +1,135 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdn.puh.hosting/puhhosting/default/bulma.min.css">
+        <title>HowToNoah.de</title>
+        <style>
+            *{
+                font-family: sans-serif;
+                color: #fff;
+            }
+            body, html{
+                width: 100%;
+                height: 100%;
+                padding: 0;
+                margin: 0;
+                background-color: #12263f;
+            }
+            .hero{
+                background:
+                    /* top, transparent black, faked with gradient */
+                        linear-gradient(
+                                rgba(0, 54, 122, 0.7),
+                                rgba(0, 54, 122, 0.7)
+                        ),
+                            /* bottom, image */
+                        url(https://cdn.puh.hosting/puhhosting/banner.webp);
+						background-size: cover;
+						background-position: center;
+            }
+            .puh-card{
+                background-color: #102239;
+                margin-left: 10px;
+                margin-right: 10px;
+                margin-top: 5px;
+                border-radius: 10px;
+                border: 1px solid #1b385d;
+            }
+            .columns{
+                margin: 10px;
+            }
+            .title{
+                color: #fff;
+            }
+            .plesk-logo{
+                padding: 10px 20px;
+                color: #fff;
+            }
+            .puh-footer{
+                bottom: 0;
+                left: 0;
+                position: fixed;
+                background-color: #162e4d;
+                color: #fff;
+                height: 50px;
+                width: 100vw;
+            }
+			.host{
+				position: fixed;
+				color: #FF0000;
+				height: 40px;
+				width: 100vw;
+			}
+        </style>
+		
+		
+    </head>
+		<script src="title.js"></script>
+		<script src="particles.js"></script>
+          <script src="app2.js"></script>
+          <div id="particles-js">
+		<noscript>Please enable Javascript!</noscript>
+        <body>
+            <section class="hero is-medium is-info" style="height: 51%">
+                <div class="hero-body">
+                    <center>
+                    <p class="title">
+                        HowToNoah - Default page
+                    </p>
+                    <p class="subtitle">
+                        Das ist die Standartseite von<p class="host">
+						<b><script>document.write(location.hostname)</script></b></p>!
+                    </p>
+                    </center>
+                </div>
+            </section>
+            <br> <br>
+            <!-- var ip = "<?php echo $_SERVER['SERVER_ADDR']; ?>";-->
+            <div class="columns">
+                <div class="column puh-card">
+                    <div class="media-left">
+                            <center><img src="https://cdn.puh.hosting/puhhosting/default/login.svg" alt=" " width="45%"></center>
+                    </div>
+                    <br>
+                    <p class="title is-4">1. Login</p>
+                    <div class="content">
+                        Go to <a href="https://hostercp.howtonoah.de" target="_blank">this</a> page and log in to Plesk.
+                    </div>
+                </div>
+                <div class="column puh-card">
+                    <div class="media-left">
+                        <center><img src="https://cdn.puh.hosting/puhhosting/default/setup.svg" alt=" " width="40%"></center>
+                    </div>
+                    <br>
+                    <p class="title is-4">2. Setup</p>
+                    <div class="content">
+                        Upload your code to the domains directory or install Apps like Wordpress or Nextcloud with the <b>install App</b> function.
+                        <br>
+                    </div>
+                </div>
+                <div class="column puh-card">
+                    <div class="media-left">
+                        <center><img src="https://cdn.puh.hosting/puhhosting/default/ready.svg" alt=" " width="40%"></center>
+                    </div>
+                    <br>
+                    <p class="title is-4">3. Ready</p>
+                    <div class="content">
+                        Have fun with your cool brand new website hosted by PuhHosting
+
+
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <footer class="puh-footer">
+                <div class="plesk-logo">
+                    Powered by <span><img src="https://cdn.puh.hosting/puhhosting/default/plesk-logo-white.png" alt="Plesk" width="40px"></span>
+                </div>
+            </footer>
+        </body>
+    </html>
